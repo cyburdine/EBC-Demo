@@ -1,0 +1,22 @@
+---
+- name: Provision instances
+  hosts: localhost
+  connection: local
+  gather_facts: False
+
+  vars_prompt:
+  - name: "user"
+    prompt: "Enter your vCenter username:"
+    private: no
+  - name: "pass"
+    prompt: "Enter your vCenter password:"
+    private: yes
+
+  - vsphere_guest:
+    vcenter_hostname: 172.16.32.2
+    username: {{ user }}
+    password: {{ pass }}
+    guest: app-server01
+    from_template: yes
+    template_src: test_srv
+    cluster: MNS
