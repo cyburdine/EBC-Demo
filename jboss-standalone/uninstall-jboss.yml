@@ -1,0 +1,7 @@
+---
+# This playbook removes a standalone JBoss server.
+
+- hosts: all
+
+  roles:
+    - jboss-standalone-uninstall
