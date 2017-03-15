@@ -1,7 +1,8 @@
 ---
 # This playbook deploys a simple standalone JBoss server.
-
-- hosts: all
+- name: Deploy web application
+  hosts: tag_type_app
+  become: true
 
   roles:
-    - jboss-standalone-install
+    - { role: jboss-standalone-install }

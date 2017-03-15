@@ -1,0 +1,7 @@
+---
+# Define parms in clear due to issue with Vault in Tower 3.1 Beta
+vault_app_jenkins_user: admin
+vault_app_jenkins_pass: Redhat1!
+
+app_jenkins_user: "{{ vault_app_jenkins_user }}"
+app_jenkins_pass: "{{ vault_app_jenkins_pass }}"
