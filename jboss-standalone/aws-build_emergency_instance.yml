@@ -42,6 +42,7 @@
     - name: associate an elastic IP with an instance
       ec2_eip:
         device_id: "{{ ec2.instances }}"
+        region: "{{ region }}"
         ip: 34.192.32.6
  
     - name: Instance info
