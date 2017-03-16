@@ -1,0 +1,16 @@
+html, body { height: 100%; padding: 0; margin: 0; }
+div { width: 50%; height: 50%; float: left; }
+#div1 { background: #DDD; }
+#div2 { background: #DDD; }
+#div3 { background: #DDD; }
+#div4 { background: #DDD; }
+#tname { 
+	position: absolute;
+	left: 10;
+	bottom: 10;
+ }
+ #lname { 
+	position: absolute;
+	left: 0;
+	bottom:0;
+ }
