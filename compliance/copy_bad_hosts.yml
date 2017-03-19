@@ -1,7 +1,14 @@
-- copy:
-  src: /mine/bad_hosts.conf
-  dest: /etc/hosts.conf
-  owner: root
-  group: root
-  mode: 0644
-  backup: yes
+---
+- name: Copy a bad version of the hosts file to a server
+  hosts: localhost
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - copy:
+      src: /var/lib/awx/public/files/bad_hosts
+      dest: /etc/hosts
+      owner: root
+      group: root
+      mode: 0644
+      backup: yes
