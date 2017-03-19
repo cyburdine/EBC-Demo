@@ -7,7 +7,7 @@
   tasks:
     - name: Copying intentionally bad file
       copy:
-        src: /var/lib/awx/public/files/bad_hosts
+        src: files/bad_hosts
         dest: /etc/hosts
         owner: root
         group: root
