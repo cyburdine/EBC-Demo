@@ -6,7 +6,7 @@
 
   vars:
     region:   us-east-1
-    ami:      ami-9e0ea788
+    ami:      ami-585feb4e
     keypair:  "{{ ec2_keypair_name | default('redhat demo') }}"
     set_dns:  False
     count:    "{{ vm_count}}"
