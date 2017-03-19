@@ -1,6 +1,7 @@
 ---
 - name: Copy a bad version of the hosts file to a server
   gather_facts: false
+  hosts: localhost
   connection: local
 
   tasks:
