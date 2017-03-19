@@ -1,0 +1,7 @@
+- copy:
+  src: /mine/bad_hosts.conf
+  dest: /etc/hosts.conf
+  owner: root
+  group: root
+  mode: 0644
+  backup: yes

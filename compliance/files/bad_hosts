@@ -1,0 +1,8 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+52.176.58.46	app-server05
+22.442.45.122	my.bad.server01
+10.32.52.32	my.evenworse.server
+122.55.7.9	a.terrible.server
+10.3.88.92	very.evil.computer.com
+98.62.45.23	veryhacked.com
