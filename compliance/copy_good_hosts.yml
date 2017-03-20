@@ -1,12 +1,12 @@
 ---
 - name: Copy a good version of the hosts file to a server
   gather_facts: false
-  hosts: localhost
-  connection: local
+  hosts: 52.176.58.46
 
   tasks:
-    - copy:
-      src: /var/lib/awx/public/files/good_hosts
+    - name: Copying good file
+      copy:
+      src: files/good_hosts
       dest: /etc/hosts
       owner: root
       group: root
